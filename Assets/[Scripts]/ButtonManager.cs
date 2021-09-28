@@ -19,7 +19,7 @@ public class ButtonManager : MonoBehaviour
 
     public void OnBackButtonPressed()
     {
-        if( SceneManager.GetActiveScene().name == "Main")
+        if( SceneManager.GetActiveScene().name == "Main" || SceneManager.GetActiveScene().name == "Instructions")
         {
             SceneManager.LoadScene("Start");
         }
@@ -33,5 +33,15 @@ public class ButtonManager : MonoBehaviour
     public void OnMenuButtonPressed()
     {
         SceneManager.LoadScene("Start");
+    }
+
+    public void OnControlsButtonPressed()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
+
+    public void OnExitButtonPressed()
+    {
+        Application.Quit();
     }
 }
