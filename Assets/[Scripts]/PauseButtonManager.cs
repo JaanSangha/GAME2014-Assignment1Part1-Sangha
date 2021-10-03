@@ -9,13 +9,9 @@ public class PauseButtonManager : MonoBehaviour
     public GameObject ResumeButton;
     public GameObject ControlsButton;
     public GameObject ExitButton;
+    public GameObject EndButton;
     public GameObject BlurScreen;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     public void OnPauseButtonPressed()
     {
@@ -23,6 +19,7 @@ public class PauseButtonManager : MonoBehaviour
         ResumeButton.SetActive(true);
         ControlsButton.SetActive(true);
         ExitButton.SetActive(true);
+        EndButton.SetActive(true);
         BlurScreen.SetActive(true);
     }
     public void OnResumeButtonPressed()
@@ -30,6 +27,7 @@ public class PauseButtonManager : MonoBehaviour
         ResumeButton.SetActive(false);
         ControlsButton.SetActive(false);
         ExitButton.SetActive(false);
+        EndButton.SetActive(false);
         BlurScreen.SetActive(false);
         Time.timeScale = 1;
     }
@@ -40,6 +38,11 @@ public class PauseButtonManager : MonoBehaviour
         {
             SceneManager.LoadScene("Start");
         }
+    }
+
+    public void OnEndButtonPressed()
+    {
+        SceneManager.LoadScene("End");
     }
 
 

@@ -23,11 +23,23 @@ public class ButtonManager : MonoBehaviour
         {
             SceneManager.LoadScene("Start");
         }
+
+        if (SceneManager.GetActiveScene().name == "Controls")
+        {
+            SceneManager.LoadScene("Instructions");
+        }
     }
 
     public void OnNextButtonPressed()
     {
-        SceneManager.LoadScene("End");
+        if (SceneManager.GetActiveScene().name == "Instructions")
+        {
+            SceneManager.LoadScene("Controls");
+        }
+        if (SceneManager.GetActiveScene().name == "Controls")
+        {
+            SceneManager.LoadScene("Start");
+        }
     }
 
     public void OnMenuButtonPressed()
