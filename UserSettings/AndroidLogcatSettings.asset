@@ -3,17 +3,11 @@
     "m_SelectedPackage": {
         "deviceId": "emulator-5554",
         "name": "ca.georgebrown.GAME2014Lab2Sangha",
-        "processId": 3130,
+        "processId": 3319,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
-        {
-            "deviceId": "emulator-5554",
-            "name": "ca.georgebrown.GAME2014Lab1Sangha",
-            "processId": 2867,
-            "exited": true
-        },
         {
             "deviceId": "emulator-5554",
             "name": "ca.georgebrown.GAME2014Lab1Sangha",
@@ -30,7 +24,7 @@
             "deviceId": "emulator-5554",
             "name": "com.ldmnq.launcher3",
             "processId": 1978,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "emulator-5554",
@@ -42,6 +36,18 @@
             "deviceId": "emulator-5554",
             "name": "ca.georgebrown.GAME2014Lab2Sangha",
             "processId": 3130,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.ldmnq.launcher3",
+            "processId": 1930,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "ca.georgebrown.GAME2014Lab2Sangha",
+            "processId": 3319,
             "exited": false
         }
     ],

@@ -1,3 +1,6 @@
+//PauseButtonManager.cs
+//Jaan Sangha 101264598
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
