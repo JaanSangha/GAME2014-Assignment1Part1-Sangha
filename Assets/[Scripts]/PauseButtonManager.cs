@@ -7,7 +7,6 @@ public class PauseButtonManager : MonoBehaviour
 {
 
     public GameObject ResumeButton;
-    public GameObject ControlsButton;
     public GameObject ExitButton;
     public GameObject EndButton;
     public GameObject BlurScreen;
@@ -17,7 +16,6 @@ public class PauseButtonManager : MonoBehaviour
     {
         Time.timeScale = 0;
         ResumeButton.SetActive(true);
-        ControlsButton.SetActive(true);
         ExitButton.SetActive(true);
         EndButton.SetActive(true);
         BlurScreen.SetActive(true);
@@ -25,7 +23,6 @@ public class PauseButtonManager : MonoBehaviour
     public void OnResumeButtonPressed()
     {
         ResumeButton.SetActive(false);
-        ControlsButton.SetActive(false);
         ExitButton.SetActive(false);
         EndButton.SetActive(false);
         BlurScreen.SetActive(false);
